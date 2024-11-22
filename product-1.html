@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Product Page</title>
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="primary-header flex full" style="position: static">
+      <div class="logo">
+        <a href="index.html">
+        <img src="./assets/images/supreme-logo.svg" alt="Supreme Logo" />
+      </div>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      ></button>
+
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation flex inter"
+          style="background-color: transparent"
+        >
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="product-container content">
+      <img
+        src="assets/images/sweatshirt-1.png"
+        alt="Product Image"
+        class="product-image"
+      />
+      <div class="product-details">
+        <h1 class="product-title">Cars Sweatshirt</h1>
+        <p class="product-price">$400</p>
+        <p class="product-description">
+          Premium cotton craftsmanship meets effortless street style, offering
+          unmatched comfort and durability for any season.
+        </p>
+        <ul class="product-features">
+          <li>Made from premium, soft cotton for ultimate comfort.</li>
+          <li>Durable construction ensures long-lasting wear.</li>
+          <li>Versatile design perfect for layering or standalone style.</li>
+          <li>Ideal for casual, everyday looks in any season.</li>
+        </ul>
+        <button class="contact">Contact now</button>
+      </div>
+    </div>
+    <footer class="full flex" id="footer">
+      <div class="logo">
+        <img src="./assets/images/supreme-logo.svg" alt="Supreme Logo" />
+      </div>
+      <ul class="footer-navigation flex">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

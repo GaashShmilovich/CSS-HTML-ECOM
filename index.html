@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Supreme</title>
+  </head>
+  <body>
+    <div class="main-layout">
+      <header class="primary-header flex full">
+        <div class="logo">
+          <img src="./assets/images/supreme-logo.svg" alt="Supreme Logo" />
+        </div>
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        ></button>
+
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation flex inter"
+          >
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="full">
+        <div class="hero">
+          <video
+            src="./assets/videos/skatevideo.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+          <h1 class="hero-overlay">STREETWEAR AND HIP HOP FASHION TRENDS.</h1>
+        </div>
+      </section>
+      <section class="products-layout content" id="products-layout">
+        <div class="product product-one">
+          <a href="product-1.html">
+            <img
+              src="./assets/images/sweatshirt-1.png"
+              alt="Product 1"
+              class="product-image"
+            />
+            <div class="product-text">
+              <h2>Cars sweatshirt</h2>
+              <p>$400</p>
+            </div>
+          </a>
+        </div>
+        <div class="product product-two">
+          <a href="product-2.html">
+            <img
+              src="./assets/images/sweatshirt-2.png"
+              alt="Product 2"
+              class="product-image"
+            />
+            <div class="product-text">
+              <h2>Diamond sweatshirt</h2>
+              <p>$400</p>
+            </div>
+          </a>
+        </div>
+        <div class="product product-three">
+          <a href="product-3.html">
+            <img
+              src="./assets/images/sweatshirt-3.png"
+              alt="Product 3"
+              class="product-image full-width"
+            />
+            <div class="product-text">
+              <h2>Devil jacket</h2>
+              <p>$550</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <footer class="full flex" id="footer">
+        <div class="logo">
+          <img src="./assets/images/supreme-logo.svg" alt="Supreme Logo" />
+        </div>
+        <ul class="footer-navigation flex">
+          <li><a href="">Home</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <ul class="social-links">
+          <li>
+            <a href=""
+              ><img src="./assets/images/icons/facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./assets/images/icons/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./assets/images/icons/twitter.svg" alt="twitter"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
