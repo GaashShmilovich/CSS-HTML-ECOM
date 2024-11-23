@@ -21,5 +21,20 @@ window.addEventListener('scroll', () => {
     } else {
         header.classList.remove('scrolled')
     }
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+    const logo = document.querySelector(".logo")
+    const mediaQuery = window.matchMedia("(min-width: 769px)")
+
+    window.addEventListener("scroll", () => {
+        if (mediaQuery.matches) {
+            if (window.scrollY > 50) {
+                logo.classList.add("scrolled")
+            } else {
+                logo.classList.remove("scrolled")
+            }
+        }
+    })
 });
 
