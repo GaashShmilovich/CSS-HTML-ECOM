@@ -185,6 +185,40 @@ svg {
   width: 100%;
 }
 
+.about-us {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  img {
+    max-height: 100vh;
+    object-fit: cover;
+  }
+  h1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    color: red;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+  }
+  p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(0.2rem, 15vw, 0.8rem);
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+  }
+}
+
 footer {
   background-color: black;
   flex-direction: column;
@@ -213,6 +247,11 @@ footer {
 }
 
 @media (min-width: 769px) {
+  .main-layout {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    min-height: 100mvh;
+  }
   .products-layout {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
