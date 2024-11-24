@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+@font-face {
+  font-family: futura, sans-serif;
+  src: url(./assets/fonts/Futura\ Bold\ Italic.ttf);
+  font-weight: 800;
+  font-style: italic;
+}
+
 *,
 *::before,
 *::after {
@@ -199,9 +206,11 @@ svg {
     left: 50%;
     transform: translate(-50%, -15%);
     color: red;
-    font-family: "Inter", sans-serif;
+    font-family: "futura", sans-serif;
+    text-shadow: 3px 1px 8px rgba(0, 0, 0, 0.39);
     font-size: clamp(1.5rem, 5vw, 3rem);
-    font-weight: bold;
+    font-weight: 800;
+    font-style: italic;
     text-align: center;
     z-index: 1;
   }
@@ -212,7 +221,7 @@ svg {
     transform: translate(-50%, -70%);
     color: black;
     font-family: "Inter", sans-serif;
-    font-size: clamp(0.2rem, 15vw, 0.8rem);
+    font-size: clamp(0.5rem, 3vw, 1.2rem);
     font-weight: bold;
     text-align: center;
     z-index: 1;
